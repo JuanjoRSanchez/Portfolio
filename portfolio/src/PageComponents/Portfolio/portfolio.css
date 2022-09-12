@@ -1,0 +1,51 @@
+#portfolio {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: bold;
+
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+
+}
+
+
+.portfolio-boxPresentacion {
+    background-color: #27665e;
+    color: white;
+}
+
+.portfolio-presentacion {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-boxJuegos {
+    background-color: #0ca893;
+}
+
+.portfolio-juego {
+    width: 32%;
+}
+
+.portfolio-boxAPIS {
+    background-color: #78bbb2;
+}
+
+.portfolio-API {
+    width: 45%;
+}
+
+.portfolio-boxLanding {
+    background-color: rgb(204, 162, 85);
+}
+
+.portfolio-LandinPage {
+    width: 45%;
+
+}

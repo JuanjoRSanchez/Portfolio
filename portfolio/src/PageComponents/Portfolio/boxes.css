@@ -1,0 +1,45 @@
+img {
+    width: 80%;
+    /* border: 1px solid red;*/
+}
+
+.image-box {
+    width: 90%;
+    height: 60%;
+    /*border: 1px solid red;*/
+    margin: auto;
+}
+
+.portfolio-boxElement {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+}
+
+.portfolio-elemnt {
+    min-width: 330px;
+    height: 350px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.portfolio-botonera {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-element {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}

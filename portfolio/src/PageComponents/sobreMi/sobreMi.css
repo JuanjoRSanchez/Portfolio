@@ -1,0 +1,70 @@
+.body-sobreMi {
+   background-color:  rgb(39,102,94);
+}
+
+.sobreMi-boxPresentacion {
+    background-color: rgb(39, 102, 94);
+    color: white;
+}
+
+.sobreMi-presentacion {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.sobreMi-A {
+    text-align: center;
+}
+
+.sobreMi-boxCurriculum {
+    background-color: rgb(12, 168, 147);
+    color: white;
+}
+
+.sobreMi-curriculum {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+.btn-curiirculum:hover {
+    border: 1px solid aqua;
+    background-color: rgb(70, 93, 156);
+    color: white;
+}
+
+.sobreMi-boxSkills {
+    background-color: rgb(100, 209, 195);
+
+}
+
+.sobreMi-Skills {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /*border: 1px solid red*/
+
+}
+.sobreMi-Skills>ul {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /*border: 1px solid red;*/
+
+}
+.sobreMi-boxTecnologias{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#curriculum{
+    display: none;
+    width: 100%;
+}

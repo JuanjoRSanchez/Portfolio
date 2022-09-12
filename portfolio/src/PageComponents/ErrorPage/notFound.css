@@ -1,0 +1,23 @@
+#notFound{
+  width: 100%;
+}
+.content{
+    font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+    background-color: brown;
+    color: white;
+
+    margin: 0px;
+    padding: 100px;
+    text-align: center;
+    font-size: 4em;
+}
+.box-pageNotFound{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 50px;
+}

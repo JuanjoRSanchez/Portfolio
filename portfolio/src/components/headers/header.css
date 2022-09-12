@@ -1,0 +1,136 @@
+.header {
+	position: sticky;
+	width: auto;
+	min-height: 100px;
+	height: 100px;
+	background-color: rgb(19, 1, 1);
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.box-1 {
+	height: 100%;
+	text-align: center;
+	/*border: 1px solid rgb(218, 134, 24);*/
+
+}
+
+.box-0 {
+	height: 60%;
+	width: 20%;
+	text-align: center;
+	/*border: 1px solid rgb(218, 95, 24);*/
+	padding-top: 20px;
+	text-align: center;
+}
+
+.container-link {
+	width: 65%;
+	height: 80px;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 5%;
+	padding-top: 18px;
+	/*border: 1px solid rgb(53, 24, 218);*/
+	contain: inherit;
+
+}
+
+
+/* Menu desplegable hamburguesa*/
+.burguer-menu {
+	position: absolute;
+	align-items: center;
+	display: none;
+	/*border: 1px solid rgb(218, 95, 24);*/
+	right: 5%;
+	top: 26%;
+
+
+}
+
+.burguer-menu>img {
+	width: 40px;
+	border: 1px solid rgb(218, 95, 24);
+	border-radius: 3px;
+}
+
+.desplegable {
+	position: absolute;
+	width: auto;
+	/*height: auto;*/
+	/*border:1px solid red;*/
+
+	top: 55%;
+	right: 2%;
+	display: none;
+	overflow: inherit;
+	text-align: right;
+
+}
+
+.desplegable-lista {
+	width: auto;
+	/*border:1px solid rgb(187, 255, 0);*/
+}
+
+.desplegable-elemento {
+	width: 150px;
+	height: 25px;
+	margin-right: 10px;
+	border: 1px solid rgb(254, 255, 255);
+	border-radius: 3px;
+	background-color: rgb(138, 212, 178);
+	text-align: center;
+	font-size: 1em;
+	color: #000000;
+}
+
+
+.desplegable-elemento:hover {
+	background-color: rgb(94, 206, 154);
+}
+
+
+@media (max-width: 500px) {
+	.header {
+		width: 100%;
+		height: 20%;
+		display: flex;
+	}
+
+	.container-link {
+		/*
+		margin-left: 1%;
+		width: 100%;
+		*/
+		display: none;
+	}
+
+	.box-0 {
+		width: 35%;
+	}
+
+	.burguer-menu {
+		/*display: flex;*/
+		display: none;
+	}
+
+	.burguer-menu>img:hover {
+		width: 41px;
+
+	}
+}
+
+@media (min-width: 800px) {
+	.desplegable {
+		display: none;
+	}
+}
+
+@media (min-width: 1100px) {
+	.box-0 {
+		width: 10%;
+	}
+}

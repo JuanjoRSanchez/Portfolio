@@ -1,0 +1,226 @@
+/* Botón Home -> SobreMi/Portfolio */
+.link {
+	text-decoration: none;
+}
+
+.svg-wrapper {
+	position: relative;
+	/*top: 15%;*/
+	transform: translateY(-50%);
+	/*margin: 0 auto;*/
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+}
+
+.shape {
+	stroke-dasharray: 140 540;
+	stroke-dashoffset: -474;
+	stroke-width: 8px;
+	fill: transparent;
+	stroke: #fbffff;
+	border-bottom: 1px solid rgb(2, 2, 2);
+	transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.text {
+	font-family: 'Montserrat', 'sans-serif';
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 32px;
+	letter-spacing: 8px;
+	color: rgb(165, 216, 124);
+	top: -48px;
+	position: relative;
+	text-align: center;
+}
+
+.svg-wrapper:hover .shape {
+	stroke-width: 2px;
+	stroke-dashoffset: 0;
+	stroke-dasharray: 760;
+}
+
+
+
+/* 
+========================
+      BUTTON navLink -> sobreMi/Portfolio/Contacto
+========================
+*/
+.header-link {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: azure;
+	padding-left: 1%;
+	padding-bottom: 5px;
+
+}
+
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 110px;
+	cursor: pointer;
+	margin-top: 7%;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 1px solid rgb(62, 211, 49);*/
+
+}
+
+.btn-one {
+	position: relative;
+}
+
+.btn-one {
+	transition: all 0.3s;
+}
+
+.btn-one::before {
+	/*content: '';*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255, 255, 255, 0.5);
+	border-bottom-color: rgba(255, 255, 255, 0.5);
+	transform: scale(0.1, 1);
+}
+
+.btn-one:hover {
+	letter-spacing: 2px;
+}
+
+.btn-one:hover::before {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+.btn-one::after {
+	/*content: '';*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+}
+
+.btn-one:hover::after {
+	opacity: 0;
+	transform: scale(0.1, 1);
+}
+
+.mibtn {
+	transition: all 0.3s;
+}
+
+.mibtn:hover {
+	letter-spacing: 2px;
+	opacity: 1;
+	transform: scale(1, 1);
+	transition: all 0.5s;
+	border-bottom: 1px solid orange;
+}
+
+.mibtn::before {
+	letter-spacing: 2px;
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+.mibtn::after {
+	opacity: 0;
+	transform: scale(0.1, 1);
+	transition: all 0.3s;
+}
+
+/* 
+========================
+      BUTTON navLink -> Home
+========================
+*/
+.btn-home {
+	position: relative;
+	height: 60%;
+	width: auto;
+	padding: 10px;
+	border-bottom: 1px solid rgb(218, 95, 24);
+	/*border: 1px solid rgb(24, 218, 40);*/
+	text-decoration: none;
+
+	text-align: center;
+	color: aliceblue;
+	font-size: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.mibtn-home {
+	transition: all 0.3s;
+}
+
+.mibtn-home:hover {
+	letter-spacing: 2px;
+	opacity: 1;
+	transform: scale(1, 1);
+	transition: all 0.5s;
+	border-bottom: 1px solid rgb(218, 215, 82);
+}
+
+.mibtn-home::before {
+	letter-spacing: 2px;
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+.mibtn-home::after {
+	opacity: 0;
+	transform: scale(0.1, 1);
+	transition: all 0.3s;
+}
+
+
+/* Sobre mí  */
+/* 
+.btn-curriculum {
+    width: 200px;
+    height: 30px;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: 1px solid rgb(70, 93, 156);
+    background-color: aqua;
+    font-family: 'Montserrat';
+    font-weight: bold;
+
+}*/
+.btn-curriculum {
+    width: 200px;
+    height: 30px;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: 1px solid rgb(70, 93, 156);
+    background-color: aqua;
+    font-family: 'Montserrat';
+    font-weight: bold;
+
+}
+.btn-curriculum:hover {
+	background-color: rgb(37, 87, 87);
+	color:white;
+}

@@ -1,0 +1,127 @@
+.body-entradaConecta {
+    background-color: black;
+    color: white;
+}
+
+.titulo-conecta {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.contenido-conecta {
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.btn-conecta {
+    margin: auto;
+    margin-top: 5%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid rgb(107, 9, 9);
+    border-radius: 15px;
+    background-color: rgb(26, 35, 44);
+    color: aliceblue;
+
+}
+
+.btn-conecta:hover {
+    animation: btnEmpezar;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse
+}
+
+@keyframes btnEmpezar {
+    0% {}
+
+    100% {
+        border: 1px solid white;
+        background-color: rgb(124, 189, 167);
+        color: black;
+    }
+}
+
+.btnGuardar {
+    position: relative;
+    top: 60%;
+    margin-left: auto;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(44, 107, 86);
+    color: aliceblue;
+}
+
+.btnGuardar:hover {
+    animation: btnGuardar;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse
+
+}
+
+@keyframes btnGuardar {
+    0% {}
+
+    100% {
+        border: 1px solid white;
+        background-color: rgb(124, 189, 167);
+        color: black;
+    }
+}
+
+.usuario1 {
+    position: relative;
+    display: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /*left: 20%;
+    right: auto;*/
+    width: 60%;
+    height: 200px;
+}
+
+label {
+    margin-left: auto;
+    font-size: 1.5em;
+
+}
+
+input {
+    width: 60%;
+    height: 25px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.usuario2 {
+    position: relative;
+    display: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /*left: 20%;
+    right: auto;*/
+    width: 60%;
+    height: 200px;
+}
+
+.cl {
+    width: 80%;
+    margin: auto;
+}
