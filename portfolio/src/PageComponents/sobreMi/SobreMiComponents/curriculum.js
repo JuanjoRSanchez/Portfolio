@@ -2,9 +2,22 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import '../../../assets/styles/botones.css';
 import './curriculum.css';
+//import { useHref } from 'react-router-dom';
+//import { useEffect } from "react";
+import { useState } from 'react';
 
 export default function Curriculum() {
-  
+
+
+  const [curriculumStyle, setCurriculumStyle] = useState("curriculumOculto")
+ 
+  const mostrarCurriculum = () => {
+    if (curriculumStyle === 'curriculumOculto') {
+      setCurriculumStyle('curriculumVisto');
+    } else {
+      setCurriculumStyle('curriculumOculto');
+    }
+  }
 
   return (
     <>
@@ -23,11 +36,10 @@ export default function Curriculum() {
             <p className='text-content'>Las prácticas del Modulo de Diseño de Aplicaciones Web las realicé en la empresa Tiresur, en Granada. Me dediqué
               a mejoras y nuevas implementaciones en un Scraper y haciendo cambios de diseño en la página de Center's Auto.
             </p>
-            <button className='btn-curriculum'>Desplegar currículum</button>
-            <div className='curriculum'>
+            <button className='btn-curriculumm' onClick={mostrarCurriculum} >Desplegar currículum</button>
+            <div className={curriculumStyle} >
               <div className='curriculum-box'>
-                <p>Estudios</p>
-                <hr />
+                <div className='curriculumTitulo'><p>Estudios destacados</p></div>
                 <div className='curriculum-item'>
                   <p>Año 2019</p>
                   Curso de Diseño de Piezas de plástico con CATIA V5.
@@ -65,8 +77,7 @@ export default function Curriculum() {
               </div>
 
               <div className='curriculum-box'>
-                <p>Experiencia profesional</p>
-                <hr />
+                <div className='curriculumTitulo'> <p>Experiencia profesional</p></div>
                 <div className='curriculum-item'>
                   <p>Desde 10/2015 hasta la 31/01/2019</p>
                   -Delineante en Sider ingenieria. Empresa dedicada al diseño de útiles de 	procesado de   chapa.

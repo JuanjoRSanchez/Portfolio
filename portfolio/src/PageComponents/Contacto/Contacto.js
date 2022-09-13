@@ -1,6 +1,6 @@
 import './contacto.css'
 
-export default function contacto() {
+export default function Contacto() {
     return (
         <>
             <div id='contacto'>

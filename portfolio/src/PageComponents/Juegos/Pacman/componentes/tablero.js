@@ -230,7 +230,7 @@ export default function Pacman() {
             "22:10",
             "22:2",
             "22:22",
-            
+
             "23:2",
             "23:3",
             "23:4",
@@ -301,10 +301,13 @@ export default function Pacman() {
 
         ]
     )
-
+    
     useEffect(() => {
+        const mensajeFantasma = 'Perdiste el juego te atrapó el fantasma';
+        const mensajeComecocos = 'Perdiste chocaste con el fantasme';
+        const mensajeVictoria = 'Has ganado ¡Felicidades!';
 
-        let velocidad = 300;
+        const velocidad = 300;
         // Nodos cambio de dirección
         let nodoDIAA = ["5:7", "5:22", "14:7", "14:22", "23:7", "23:22"];
         let nodoDAb = ["2:2", "2:16", "8:16", "11:10", "20:2", "20:10", "14:19"];
@@ -954,13 +957,18 @@ export default function Pacman() {
             }
             return false
         }
-        
+
         function evaluarChoqueFantasmaConPacman(posi) {
-            let clas = document.getElementById(posi).getAttribute('class');
-            if (clas !== 'comecocosDerecha' && clas !== 'comecocosIzquierda' && clas !== 'comecocosArriba' &&
-                clas !== 'comecocosAbajo' && clas !== 'comecocosCerrado') {
-                return false;
+            try {
+                let clas = document.getElementById(posi).getAttribute('class');
+                if (clas !== 'comecocosDerecha' && clas !== 'comecocosIzquierda' && clas !== 'comecocosArriba' &&
+                    clas !== 'comecocosAbajo' && clas !== 'comecocosCerrado') {
+                    return false;
+                }
+            } catch (error) {
+
             }
+
             return true;
         }
 
@@ -1075,6 +1083,7 @@ export default function Pacman() {
         }
 
         function movimiento(caminos, caminoEvaluar, pos, color) {
+
             if (evaluarMovimientoFantasma(caminoEvaluar)) {
                 let clase;
                 switch (color) {
@@ -1098,28 +1107,39 @@ export default function Pacman() {
                         break;
 
                 }
-                let classmovimiento = document.getElementById(caminoEvaluar).getAttribute('class');
-                if (classmovimiento === 'comecocos'
-                    || classmovimiento === 'comecocosCerrado' || classmovimiento === 'comecocosDerecha' || classmovimiento === 'comecocosIzquierda'
-                    || classmovimiento === 'comecocosArriba' || classmovimiento === 'comecocosAbajo' || classmovimiento === 'comecocosCerrado') {
-                    if (evaluarChoqueFantasmaConPacman(caminoEvaluar)) {
-                        document.getElementById('mensaje').style.display = 'block';
-                        document.getElementById('mensajeContenido').innerText = 'Perdiste el juego te atrapó el fantasma';
+                try {
+                    let classmovimiento = document.getElementById(caminoEvaluar).getAttribute('class');
+
+                    if (classmovimiento === 'comecocos'
+                        || classmovimiento === 'comecocosCerrado' || classmovimiento === 'comecocosDerecha' || classmovimiento === 'comecocosIzquierda'
+                        || classmovimiento === 'comecocosArriba' || classmovimiento === 'comecocosAbajo' || classmovimiento === 'comecocosCerrado') {
+                        if (evaluarChoqueFantasmaConPacman(caminoEvaluar)) {
+                            mostrarMensaje(mensajeFantasma);
+                        }
                     }
+                } catch (error) {
+                    console.log('hhhhhhhh');
                 }
                 if (caminos.includes(pos)) {
-                    document.getElementById(pos).setAttribute('class', 'punto');
+                    try {
+                        document.getElementById(pos).setAttribute('class', 'punto');
+                    } catch (error) {
+
+                    }
                 } else {
                     document.getElementById(pos).setAttribute('class', 'noPunto');
                 }
-                document.getElementById(caminoEvaluar).classList.add(clase);
+                try {
+                    document.getElementById(caminoEvaluar).classList.add(clase);
+                } catch (error) {
+
+                }
                 if (!randomDireccionesTotal(caminoEvaluar)) {
                     return false;
                 } else {
 
                     if (evaluarChoqueFantasmaConPacman(caminoEvaluar)) {
-                        document.getElementById('mensaje').style.display = 'block';
-                        document.getElementById('mensaje').innerText = 'Perdiste el juego te atrapó el fantasma';
+                        mostrarMensaje(mensajeFantasma);
                     }
                     switch (color) {
                         case 'rosa':
@@ -1219,9 +1239,9 @@ export default function Pacman() {
                 default:
                     break;
             }
-        
+
         }
-        
+
         function movimientoFantasmaNaranjaTotal(caminos) {
             let pos = fantasmaNaranja.posicion;
             let DX = parseInt(pos.split(':')[1]);
@@ -1232,28 +1252,28 @@ export default function Pacman() {
                 case 'derecha':
                     DX = DX + 1;
                     caminoEvaluarNaranja = DY + ':' + DX;
-                    if (!movimiento(caminos,caminoEvaluarNaranja, pos, color)) {
+                    if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
                         break;
                     }
                     break;
                 case 'izquierda':
                     DX = DX - 1;
                     caminoEvaluarNaranja = DY + ':' + (DX);
-                    if (!movimiento(caminos,caminoEvaluarNaranja, pos, color)) {
+                    if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
                         break;
                     }
                     break;
                 case 'arriba':
                     DY = DY - 1;
                     caminoEvaluarNaranja = DY + ':' + (DX);
-                    if (!movimiento(caminos,caminoEvaluarNaranja, pos, color)) {
+                    if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
                         break;
                     }
                     break;
                 case 'abajo':
                     DY = DY + 1;
                     caminoEvaluarNaranja = DY + ':' + (DX);
-                    if (!movimiento(caminos,caminoEvaluarNaranja, pos, color)) {
+                    if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
                         break;
                     }
                     break;
@@ -1261,7 +1281,7 @@ export default function Pacman() {
                     break;
             }
         }
-        
+
         function movimientoFantasmaAzulTotal(caminos) {
             let pos = fantasmaAzul.posicion;
             let DX = parseInt(pos.split(':')[1]);
@@ -1272,52 +1292,53 @@ export default function Pacman() {
                 case 'derecha':
                     DX = DX + 1;
                     caminoEvaluarAzul = DY + ':' + DX;
-                    if (!movimiento(caminos,caminoEvaluarAzul, pos, color)) {
+                    if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
                         break;
                     }
                     break;
                 case 'izquierda':
                     DX = DX - 1;
                     caminoEvaluarAzul = DY + ':' + (DX);
-                    if (!movimiento(caminos,caminoEvaluarAzul, pos, color)) {
+                    if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
                         break;
                     }
                     break;
                 case 'arriba':
                     DY = DY - 1;
                     caminoEvaluarAzul = DY + ':' + (DX);
-                    if (!movimiento(caminos,caminoEvaluarAzul, pos, color)) {
+                    if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
                         break;
                     }
                     break;
                 case 'abajo':
                     DY = DY + 1;
                     caminoEvaluarAzul = DY + ':' + (DX);
-                    if (!movimiento(caminos,caminoEvaluarAzul, pos, color)) {
+                    if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
                         break;
                     }
                     break;
-                    default:
-                        break;
+                default:
+                    break;
             }
         }
-        
+
         ////// manejar botón de reinicio //////////////
         function reiniciarPartida() {
             window.location.reload();
         }
-    
-        document.getElementsByClassName('btnCerrar_conecta')[0].addEventListener('click', reiniciarPartida);
 
-        setInterval(crearEstructura, velocidad);
-        setInterval(movimientoFantasmasYPacman, velocidad);
+        document.getElementsByClassName('btnCerrar_conecta')[0].addEventListener('click', reiniciarPartida);
 
         //////////////******** Pacman ********/////////////////////
         /*
         Función que dependiendo de la dirección que lleve Pacman orienta su cuerpo 
         */
         function mostrarPacman() {
-            var pu = document.getElementById(comecocos.puntoInicical);
+            try {
+                var pu = document.getElementById(comecocos.puntoInicical);
+            } catch (error) {
+                
+            }
             if (pu.getAttribute('class') === 'comecocosDerecha' || pu.getAttribute('class') === 'comecocosIzquierda'
                 || pu.getAttribute('class') === 'comecocosArriba' || pu.getAttribute('class') === 'comecocosAbajo') {
                 pu.setAttribute('class', 'comecocosCerrado');
@@ -1361,7 +1382,7 @@ export default function Pacman() {
             }
 
         });
-      
+
         function restantes(posi) {
             for (var i = puntos.length - 1; i >= 0; i--) {
                 if (puntos[i] === posi) {
@@ -1386,98 +1407,75 @@ export default function Pacman() {
         function evaluarVictoria() {
             let puntosRestantes = document.getElementsByClassName('punto').length;
             if (puntosRestantes === 0) {
-                mostrarMensaje();
+                mostrarMensaje(mensajeVictoria);
             }
         }
-        function mostrarMensaje() {
-            document.getElementById('mensaje').style.display = 'block';
-            document.getElementById('mensaje').innerText = 'Has ganado, FELICIDADES!!!';
-        }
 
+        function mostrarMensaje(string) {
+            try {
+                document.getElementById('mensaje').style.display = 'block';
+                document.getElementById('mensajeContenido').innerHTML = string;
+            } catch (error) {
+
+            }
+
+
+        }
         function movimientosPacman() {
             let pos = comecocos.puntoInicical;
             let DX = parseInt(pos.split(':')[1]);
             let DY = parseInt(pos.split(':')[0]);
             let caminoEvaluar;
+            let classComecocos;
             switch (direccion) {
                 case 'derecha':
                     DX = DX + 1;
                     caminoEvaluar = DY + ':' + (DX);
-                    document.getElementById(comecocos.puntoInicical).setAttribute('class', 'comecocosDerecha');
-                    comecocos.direccion = 'derecha';
-                    if (document.getElementById(caminoEvaluar).getAttribute('class') === 'punto') {
-                        comecocos.puntosComidos.push(caminoEvaluar);
-                        restantes(caminoEvaluar);
-                    }
-                    if (evaluarMovimiento(caminoEvaluar)) {
-                        document.getElementById(pos).setAttribute('class', 'noPunto');
-                        comecocos.puntoInicical = caminoEvaluar;
-                        if (evaluarChoquePacmanConFantasma(comecocos.puntoInicical)) {
-                            document.getElementById('mensaje').style.display = 'block';
-                            document.getElementById('mensajeContenido').innerText = 'Perdiste el juego';
-                        }
-                    }
+                    classComecocos = 'comecocosDerecha'
+                    evaluarmovimientoPacman(caminoEvaluar, pos, classComecocos, 'derecha');
                     break;
                 case 'izquierda':
                     DX = DX - 1;
                     caminoEvaluar = DY + ':' + (DX);
-                    document.getElementById(comecocos.puntoInicical).setAttribute('class', 'comecocosIzquierda');
-                    comecocos.direccion = 'izquierda';
-                    if (document.getElementById(caminoEvaluar).getAttribute('class') === 'punto') {
-                        comecocos.puntosComidos.push(caminoEvaluar);
-                        restantes(caminoEvaluar);
-
-                    }
-                    if (evaluarMovimiento(caminoEvaluar)) {
-                        document.getElementById(pos).setAttribute('class', 'noPunto');
-                        comecocos.puntoInicical = caminoEvaluar;
-                        if (evaluarChoquePacmanConFantasma(comecocos.puntoInicical)) {
-                            document.getElementById('mensaje').style.display = 'block';
-                            document.getElementById('mensajeContenido').innerText = 'Perdiste el juego';
-                        }
-                    }
+                    classComecocos = 'comecocosIzquierda';
+                    evaluarmovimientoPacman(caminoEvaluar, pos, classComecocos, 'izquierda');
                     break;
                 case 'arriba':
                     DY = DY - 1;
                     caminoEvaluar = DY + ':' + (DX);
-                    document.getElementById(comecocos.puntoInicical).setAttribute('class', 'comecocosArriba');
-                    comecocos.direccion = 'arriba';
-                    if (document.getElementById(caminoEvaluar).getAttribute('class') === 'punto') {
-                        comecocos.puntosComidos.push(caminoEvaluar);
-                        restantes(caminoEvaluar);
-                    }
-                    if (evaluarMovimiento(caminoEvaluar)) {
-                        document.getElementById(pos).setAttribute('class', 'noPunto');
-                        comecocos.puntoInicical = caminoEvaluar;
-                        if (evaluarChoquePacmanConFantasma(comecocos.puntoInicical)) {
-                            document.getElementById('mensaje').style.display = 'block';
-                            document.getElementById('mensajeContenido').innerText = 'Perdiste el juego';
-                        }
-                    }
+                    classComecocos = 'comecocosArriba';
+                    evaluarmovimientoPacman(caminoEvaluar, pos, classComecocos, 'arriba');
                     break;
                 case 'abajo':
                     DY = DY + 1;
                     caminoEvaluar = DY + ':' + (DX);
-                    document.getElementById(comecocos.puntoInicical).setAttribute('class', 'comecocosAbajo');
-                    comecocos.direccion = 'abajo';
-                    if (document.getElementById(caminoEvaluar).getAttribute('class') === 'punto') {
-                        comecocos.puntosComidos.push(caminoEvaluar);
-                        restantes(caminoEvaluar);
-                    }
-                    if (evaluarMovimiento(caminoEvaluar)) {
-                        document.getElementById(pos).setAttribute('class', 'noPunto');
-                        comecocos.puntoInicical = caminoEvaluar;
-                        if (evaluarChoquePacmanConFantasma(comecocos.puntoInicical)) {
-                            document.getElementById('mensaje').style.display = 'block';
-                            document.getElementById('mensajeContenido').innerText = 'Perdiste el juego';
-                        }
-                    }
+                    classComecocos = 'comecocosAbajo';
+                    evaluarmovimientoPacman(caminoEvaluar, pos, classComecocos, 'abajo');
                     break;
                 default:
                     break;
             }
             evaluarVictoria();
 
+        }
+        function evaluarmovimientoPacman(caminoEvaluar, pos, classComecocos, direccion) {
+            try {
+                document.getElementById(comecocos.puntoInicical).setAttribute('class', classComecocos);
+            } catch (error) {
+
+            }
+            comecocos.direccion = direccion;
+            if (document.getElementById(caminoEvaluar).getAttribute('class') === 'punto') {
+                comecocos.puntosComidos.push(caminoEvaluar);
+                restantes(caminoEvaluar);
+            }
+            if (evaluarMovimiento(caminoEvaluar)) {
+                document.getElementById(pos).setAttribute('class', 'noPunto');
+                comecocos.puntoInicical = caminoEvaluar;
+                if (evaluarChoquePacmanConFantasma(comecocos.puntoInicical)) {
+                    mostrarMensaje(mensajeComecocos);
+                }
+            }
         }
         function movimientoFantasmasYPacman() {
             movimientoFantasmaRosaTotal(puntos);
@@ -1486,9 +1484,12 @@ export default function Pacman() {
             movimientoFantasmaAzulTotal(puntos);
             movimientosPacman();
             mostrarPacman();
-
         }
+
+        setInterval(crearEstructura, velocidad);
+        setInterval(movimientoFantasmasYPacman, velocidad);
     }, [])
+
 
     return (
         <div className='body_pacmann'>

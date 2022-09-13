@@ -2,7 +2,7 @@ import './conecta4.css'
 import './conecta4Juego.css'
 import HeaderJuegos from '../headJuegos'
 
-export default function conecta4() {
+export default function Conecta4() {
 
 /*
     let btnInicio = document.getElementById('btn-inicio');

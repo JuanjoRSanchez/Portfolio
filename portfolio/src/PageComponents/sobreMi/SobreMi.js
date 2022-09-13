@@ -4,7 +4,7 @@ import '../../assets/styles/global.css'
 import '../../assets/styles/botones.css'
 import Curriculum from './SobreMiComponents/curriculum'
 
-export default function sobreMi() {
+export default function SobreMi() {
   return (
     <>
       <div className='body-sobreMi'>

@@ -3,7 +3,7 @@ import './sobreMi.css'
 import '../../assets/styles/global.css'
 import '../../assets/styles/botones.css'
 
-export default function tecnologias() {
+export default function Tecnologias() {
   const estilo01 = { fontSize: '1.5em' };
   return (
     <>

@@ -4,7 +4,7 @@ import '../../assets/styles/global.css'
 import '../../assets/styles/botones.css'
 import { NavLink } from "react-router-dom";
 
-export default function portfolio() {
+export default function Portfolio() {
     return (
         <>
             <div className='body-portfolio'>

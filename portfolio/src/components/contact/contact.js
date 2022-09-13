@@ -2,7 +2,7 @@ import React from 'react';
 import './contact.css'
 
 
-export default function contacto() {
+export default function Contacto() {
     return (
         <div className='body-contacto'>
             

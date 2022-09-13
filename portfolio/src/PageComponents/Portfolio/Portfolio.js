@@ -7,8 +7,10 @@ import conecta from '../../assets/images/conecta4.png';
 import BoxElementAPI from './boxAPI'
 import oleumImg from '../../assets/images/Oleum/oleumtempore-nature-pack.png'
 import FloriImg from '../../assets/images/flori01.png'
+import FilmotecaImg from '../../assets/images/LogoFilmoteca00.png'
+import RickMorty from '../../assets/images/Rick-and-Morty.png'
 
-export default function portfolio() {
+export default function Portfolio() {
   return (
     <>
       <div id='portfolio'>
@@ -37,8 +39,8 @@ export default function portfolio() {
             Todos están hechos en Javascript y según mis propia lógica para bién o para mal.
           </div>
           <div className='portfolio-boxElement'>
-            <BoxElementAPI imag={oleumImg} title='Oleum Tempore' dir='/' />
-            <BoxElementAPI imag={FloriImg} title='Floristerira Puertollano' dir='/' />
+            <BoxElementAPI imag={FilmotecaImg} title='Filmoteca' dir='https://juanjorubiosancheportfolio.netlify.app/' />
+            <BoxElementAPI imag={RickMorty} title='Rick and Morty' dir='/' />
           </div>
         </section>
         <section className='portfolio-boxLanding box'>

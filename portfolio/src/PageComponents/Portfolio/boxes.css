@@ -5,13 +5,19 @@
 
 .boxElement_content {
     width: 90%;
-    height: 60%;
+   /* height: 60%;*/
+    height: auto;
+    min-height: 200px;
     border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding-bottom: 20px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     text-align: left;
     align-items: center;
+
 }
 
 .content_descripcion {
@@ -37,9 +43,11 @@
 .portfolio-elemnt {
     width: 100%;
     min-width: 330px;
-    height: 350px;
+    /*height: 350px;*/
+    height: auto;
+    padding-bottom: 20px;
     margin-top: 10px;
-    background-color: #9ad1d3;
+    background-color: #fafcfc;
     border-radius: 15px;
     color: rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -47,7 +55,7 @@
 
 .portfolio-botonera {
     position: relative;
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -56,4 +64,107 @@
     width: 150px;
     height: 40px;
     border-radius: 10px;
+    background-color: #125555;
+    color: #fafcfc;
+}
+
+
+/* Box API */
+/*
+.portfolio-API{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.portfolio-elemntAPI{
+    width: 100%;
+    min-width: 330px;
+    height: 350px;
+    margin-top: 10px;
+    background-color: #9ad1d3;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.portfolio-botoneraAPI{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.portfolio-botoneraAPI {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.btn-element {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+.titulo-API{
+    width: 90%;
+    margin: auto;
+
+}
+.image-boxAPI{
+    position: relative;
+    width: 90%;
+    height: 45%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+
+}
+.imgAPI{
+    width: 50%;
+}
+
+@media (max-width: 600px){
+    .imgAPI{
+        width: 75%;
+    }
+}
+*/
+
+@media (max-width: 600px){
+    .boxElement_img {
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /* border: 1px solid red;*/
+    }
+    .boxElement_content {
+        /*
+        width: 90%;
+        height: 60%;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: left;
+        align-items: center;
+    */
+    height: auto;
+    }
+    
 }
