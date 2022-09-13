@@ -5,7 +5,7 @@ export default function Casilla(props) {
    
    
     return (
-        <div id={props.id} className={ props.clase } ></div>
+        <div id={props.id}  className={ props.clase } ></div>
     );
 }
 

@@ -3,7 +3,7 @@ import '../../../assets/styles/global.css';
 import '../../../assets/styles/botones.css';
 import './curriculum.css';
 
-export default function curriculum() {
+export default function Curriculum() {
   
 
   return (
