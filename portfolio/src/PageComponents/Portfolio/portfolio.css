@@ -19,6 +19,41 @@
     color: white;
 }
 
+.seccionesPortfolio {
+    position: relative;
+    width: 75%;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /*border: 1px solid red;*/
+
+}
+
+.seccionPortfolio {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 31%;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #00be9f;
+    font-size: 1em;
+
+}
+
+.seccionPortfolio:hover {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #55978c;
+
+}
+
 .portfolio-presentacion {
     width: 80%;
     margin-left: auto;
@@ -47,5 +82,21 @@
 
 .portfolio-LandinPage {
     width: 45%;
+
+}
+
+@media (max-width: 500px) {
+    .seccionPortfolio {
+        font-size: 0.8em;
+
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .text-content {
+        font-size: 1.1em;
+    }
 
 }

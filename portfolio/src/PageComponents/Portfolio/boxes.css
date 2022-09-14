@@ -1,32 +1,30 @@
 .boxElement_img {
     width: 30%;
-    /* border: 1px solid red;*/
+    background-color: #fafcfc;
+    border-radius: 5px;
 }
 
 .boxElement_content {
     width: 90%;
-   /* height: 60%;*/
     height: auto;
     min-height: 200px;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
-    padding-bottom: 20px;
+    border-top: 1px solid rgb(49, 150, 153);
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     text-align: left;
     align-items: center;
-
 }
 
 .content_descripcion {
-    /*border: 1px solid rgb(89, 0, 255);*/
     width: 60%;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px;
-    text-align: center;
-
+    text-align: left;
+    padding-left: 30px;
 }
 
 .portfolio-boxElement {
@@ -40,17 +38,33 @@
 
 }
 
-.portfolio-elemnt {
+.portfolio-element {
     width: 100%;
     min-width: 330px;
     /*height: 350px;*/
     height: auto;
     padding-bottom: 20px;
-    margin-top: 10px;
     background-color: #fafcfc;
     border-radius: 15px;
+    border: 1px solid white;
     color: rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #6cb1a8;
+}
+
+.boxTitlePortfolio{
+    
+    height: 70px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #42ebd1;
+    margin-top: 30px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 .portfolio-botonera {
@@ -68,103 +82,24 @@
     color: #fafcfc;
 }
 
-
-/* Box API */
-/*
-.portfolio-API{
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
-
-.portfolio-elemntAPI{
-    width: 100%;
-    min-width: 330px;
-    height: 350px;
-    margin-top: 10px;
-    background-color: #9ad1d3;
-    border-radius: 15px;
-    color: rgb(0, 0, 0);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-
-.portfolio-botoneraAPI{
-    position: relative;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.portfolio-botoneraAPI {
-    position: relative;
-    width: 80%;
-    margin: auto;
-    margin-top: 10px;
-    top: 5px;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.btn-element {
+.btn-element:hover {
     width: 150px;
     height: 40px;
     border-radius: 10px;
-}
-.titulo-API{
-    width: 90%;
-    margin: auto;
-
-}
-.image-boxAPI{
-    position: relative;
-    width: 90%;
-    height: 45%;
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-
-}
-.imgAPI{
-    width: 50%;
+    background-color: #125555;
+    color: #fafcfc;
 }
 
-@media (max-width: 600px){
-    .imgAPI{
-        width: 75%;
-    }
-}
-*/
-
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .boxElement_img {
         width: 80%;
         margin-top: 10px;
         margin-bottom: 10px;
         /* border: 1px solid red;*/
     }
+
     .boxElement_content {
-        /*
-        width: 90%;
-        height: 60%;
-        border-top: 1px solid red;
-        border-bottom: 1px solid red;
-        margin: auto;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        text-align: left;
-        align-items: center;
-    */
-    height: auto;
+        height: auto;
     }
-    
+
 }

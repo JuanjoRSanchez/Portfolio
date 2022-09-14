@@ -5,9 +5,9 @@ import './boxes.css'
 export default function BoxElement(props) {
     const dirSnake = props.dir;
     const snakeText = "Este es el juego de la serpiente clasico de Nokia. ";
-    const conectaText = "He recreado el juego de la serpiente clasico Connecta 4.";
-    const pacmanText = "He recreado el juego de la serpiente clasico Pacman.";
-    let Text ;
+    const conectaText = "Este es el juego clasico Connecta 4.";
+    const pacmanText = "Este es el juego clasico Pacman.";
+    let Text;
     function defineText(titulo) {
         switch (titulo) {
             case 'Snake':
@@ -25,7 +25,7 @@ export default function BoxElement(props) {
             default:
                 break;
         }
-        
+
         return Text;
     }
     let nav;
@@ -43,17 +43,40 @@ export default function BoxElement(props) {
     }
 
     return (
-        <div className='portfolio-juego portfolio-elemnt'>
+        <>
+            <div className='boxTitlePortfolio'>
+                <h1 >{props.title}</h1>
+            </div>
+            <div className='portfolio-juego portfolio-element'>
+                <div className='boxElement_content'>
+                    <img className='boxElement_img' src={props.imag} alt={props.title}></img>
+                    {<div className='content_descripcion'>
+                        <p>{defineText(props.title)}</p>
+                    </div>}
+                </div>
+                <div className='portfolio-botonera'>
+                    {nav}
+                    {navGit}
+                </div>
+            </div>
+
+        </>
+
+    )
+}
+
+/*
+<div className='portfolio-juego portfolio-element'>
             <h1 >{props.title}</h1>
             <div className='boxElement_content'>
                 <img className='boxElement_img' src={props.imag} alt={props.title}></img>
-                {<div className='content_descripcion'>{defineText(props.title)}</div>}
+                {<div className='content_descripcion'>
+                    <p>{defineText(props.title)}</p>
+                </div>}
             </div>
             <div className='portfolio-botonera'>
                 {nav}
                 {navGit}
             </div>
         </div>
-    )
-}
-
+*/

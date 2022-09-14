@@ -17,10 +17,15 @@ export default function Portfolio() {
         <section className='portfolio-boxPresentacion box'>
           <p className='titulo'>Portfolio</p>
           <div className='text-content'>
-            El protfolio está dividido en tres partes: Juegos en JavaScript, API's y LandingPages.
+            El protfolio está dividido en tres partes:
+          </div>
+          <div className='seccionesPortfolio' > 
+           <a href='#juegosPortfolio' className='seccionPortfolio'>Juegos</a>
+           <a href='#ApisPortfolio' className='seccionPortfolio'>API's</a>
+           <a href='#LandingPagesPortfolio' className='seccionPortfolio'>LandingPages</a>
           </div>
         </section>
-        <section className='portfolio-boxJuegos box'>
+        <section className='portfolio-boxJuegos box' id='juegosPortfolio'>
           <p className='titulo'>Juegos</p>
           <div className='text-content'>
             Aquí podrás ver los juegos que he desarrollado para practicar las habilidades de Javascript.
@@ -32,7 +37,7 @@ export default function Portfolio() {
             <BoxElement imag={Pacman} title='Pacman' dir='/pacman' />
           </div>
         </section>
-        <section className='portfolio-boxAPIS box'>
+        <section className='portfolio-boxAPIS box' id='ApisPortfolio'>
           <p className='titulo'>APIS</p>
           <div className='text-content'>
             Aquí podrás ver los juegos que he desarrollado para practicar las habilidades de Javascript.
@@ -43,7 +48,7 @@ export default function Portfolio() {
             <BoxElementAPI imag={RickMorty} title='Rick and Morty' dir='/' />
           </div>
         </section>
-        <section className='portfolio-boxLanding box'>
+        <section className='portfolio-boxLanding box' id='LandingPagesPortfolio'>
           <p className='titulo'>LandingPages</p>
           <div className='text-content'>
             Aquí podrás ver los juegos que he desarrollado para practicar las habilidades de Javascript.
