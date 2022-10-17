@@ -1,6 +1,8 @@
 import './snake.css'
 import Tablero01 from './tablero01'
 import HeaderJuegos from '../headJuegos'
+import Header from '../../../components/headers/header';
+import Footer from '../../../components/footer/footer';
 
 export default function Snake() {
 

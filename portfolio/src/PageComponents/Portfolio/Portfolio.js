@@ -1,12 +1,12 @@
 import './portfolio.css'
 import '../../assets/styles/global.css'
 import BoxElement from './boxElement'
-import snake from '../../assets/images/snake.jpg';
-import Pacman from '../../assets/images/pacman01.png';
-import conecta from '../../assets/images/conecta4.png';
+import Snake from '../../assets/images/Snake_Logo.png'
+import Pacman from '../../assets/images/Packman_Logo.png';
+import conecta from '../../assets/images/Conecta_Logo.png';
 import BoxElementAPI from './boxAPI'
-import oleumImg from '../../assets/images/Oleum/oleumtempore-nature-pack.png'
-import FloriImg from '../../assets/images/flori01.png'
+//import oleumImg from '../../assets/images/Logo_OleumTempore_V03.png'
+//import FloriImg from '../../assets/images/flori01.png'
 import FilmotecaImg from '../../assets/images/LogoFilmoteca00.png'
 import RickMorty from '../../assets/images/Rick-and-Morty.png'
 
@@ -22,17 +22,16 @@ export default function Portfolio() {
           <div className='seccionesPortfolio' > 
            <a href='#juegosPortfolio' className='seccionPortfolio'>Juegos</a>
            <a href='#ApisPortfolio' className='seccionPortfolio'>API's</a>
-           <a href='#LandingPagesPortfolio' className='seccionPortfolio'>LandingPages</a>
           </div>
         </section>
         <section className='portfolio-boxJuegos box' id='juegosPortfolio'>
           <p className='titulo'>Juegos</p>
           <div className='text-content'>
             Aquí podrás ver los juegos que he desarrollado para practicar las habilidades de Javascript.
-            Todos están hechos en Javascript y según mis propia lógica para bién o para mal.
+            Todos están hechos en Javascript y según mis propia lógica. 
           </div>
           <div className='portfolio-boxElement'>
-            <BoxElement imag={snake} title='Snake' dir='/snake' />
+            <BoxElement imag={Snake} title='Snake' dir='/snake' />
             <BoxElement imag={conecta} title='Conecta 4' dir='/conecta' />
             <BoxElement imag={Pacman} title='Pacman' dir='/pacman' />
           </div>
@@ -44,23 +43,16 @@ export default function Portfolio() {
             Todos están hechos en Javascript y según mis propia lógica para bién o para mal.
           </div>
           <div className='portfolio-boxElement'>
-            <BoxElementAPI imag={FilmotecaImg} title='Filmoteca' dir='https://juanjorubiosancheportfolio.netlify.app/' />
+            <BoxElementAPI imag={FilmotecaImg} title='Filmoteca' dir='https://localhost:9013' />
             <BoxElementAPI imag={RickMorty} title='Rick and Morty' dir='/' />
           </div>
         </section>
-        <section className='portfolio-boxLanding box' id='LandingPagesPortfolio'>
-          <p className='titulo'>LandingPages</p>
-          <div className='text-content'>
-            Aquí podrás ver los juegos que he desarrollado para practicar las habilidades de Javascript.
-            Todos están hechos en Javascript y según mis propia lógica para bién o para mal.
-          </div>
-          <div className='portfolio-boxElement'>
-            <BoxElementAPI imag={oleumImg} title='Oleum Tempore' dir='/' />
-            <BoxElementAPI imag={FloriImg} title='Floristerira Puertollano' dir='/' />
-          </div>
-        </section>
+        
       </div >
     </>
   )
 }
 
+/*
+<BoxElementAPI imag={FilmotecaImg} title='Filmoteca' dir='https://juanjorubiosancheportfolio.netlify.app/' />
+*/

@@ -1,0 +1,5 @@
+Lanzar imagen de Portfolio
+
+1º: docker-compose -f docker-compose.prod.yml build
+
+2º: docker run -p 80:80 --name react-app app-prod

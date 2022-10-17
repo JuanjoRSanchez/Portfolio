@@ -4,9 +4,9 @@ import './boxes.css'
 
 export default function BoxElement(props) {
     const dirSnake = props.dir;
-    const snakeText = "Este es el juego de la serpiente clasico de Nokia. ";
-    const conectaText = "Este es el juego clasico Connecta 4.";
-    const pacmanText = "Este es el juego clasico Pacman.";
+    const snakeText = "Este es el juego de la serpiente clasico de Nokia ¡Ciudado no podras salirte del mapa! ";
+    const conectaText = "He desarrollado el juego Connecta 4 para poder ser jugado por dos jugadores.";
+    const pacmanText = "He intentado recrear el juego clasico Pacman.";
     let Text;
     function defineText(titulo) {
         switch (titulo) {
