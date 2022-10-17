@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
         <div className='rigth-footer'>
           <p> Contactame </p>
-          <hr className='hr_footer'/>
+          <hr className='hr_footer' />
           <div>Linkedin:
             <br />
             <a href='https://www.linkedin.com/in/juan-jose-rubio-sanchez-621034103/' target="_blank" rel="noreferrer noopener">

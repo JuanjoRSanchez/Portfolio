@@ -1,15 +1,9 @@
 import './snake.css'
-import Tablero01 from './tablero01'
+import Tablero01 from './ComponentTablero'
 import HeaderJuegos from '../headJuegos'
-import Header from '../../../components/headers/header';
-import Footer from '../../../components/footer/footer';
+
 
 export default function Snake() {
-
-    // Elementos HTML
-    //let mensaje = document.getElementById('mensaje');
-    //let tablero = document.getElementById('tablero-snake');
-
     // Ancho de las columnas
     // let grid = "15px";
     //let gridCompleto = grid;
@@ -295,8 +289,3 @@ export default function Snake() {
     )
 }
 
-/*
- <header>
-    Juego de la Serpiente
-</header>
-*/

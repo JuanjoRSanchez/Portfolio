@@ -14,7 +14,7 @@ export default function Portfolio() {
                     <div className='text-box'>
                         <p className='text-content'>Aquí le muestro algunos de los proyectos que he desarrolado, con
                             diferentes tecnologías tanto de frontEnd (HTML, CSS, Javascript, React, Vue) como
-                            de BackEnd (Java, JPA, MySql).                          
+                            de BackEnd (Java, JPA, MySql).
                         </p>
                     </div>
                 </div>

@@ -31,10 +31,3 @@ export default function SobreMi() {
   )
 }
 
-/*
-Me llamo Juanjo y nací en 1981 en Barcelona, actualmente vivo en Granada. He
-tenido diferentes experiencias laborales hasta 2013 principalmente relacionadas con la logística hasta 2015, cuando despues de acabar un Modulo Profesional
-de Diseño en Fabricación Mecánica trabajé hasta 2019 como delineante
-para la industria de la automoción. En 2020 enpecé el Módulo Profesional de Diseño de Aplicaciones Web que acabé
-en 2022.
-*/

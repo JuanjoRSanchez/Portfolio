@@ -65,18 +65,3 @@ export default function BoxElement(props) {
     )
 }
 
-/*
-<div className='portfolio-juego portfolio-element'>
-            <h1 >{props.title}</h1>
-            <div className='boxElement_content'>
-                <img className='boxElement_img' src={props.imag} alt={props.title}></img>
-                {<div className='content_descripcion'>
-                    <p>{defineText(props.title)}</p>
-                </div>}
-            </div>
-            <div className='portfolio-botonera'>
-                {nav}
-                {navGit}
-            </div>
-        </div>
-*/

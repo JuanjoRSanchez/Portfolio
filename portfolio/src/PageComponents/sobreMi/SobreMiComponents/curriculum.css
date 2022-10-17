@@ -4,7 +4,6 @@
 }
 
 .curriculumOculto {
-    /*display: none;*/
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -16,7 +15,6 @@
 }
 
 .curriculum {
-    /*animation: slideCurriculum 5s alternate;*/
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -52,7 +50,6 @@
 }
 
 .text-box {
-    /*border: 1px solid rgb(0, 47, 255);*/
     width: 90%;
 
 }
@@ -66,7 +63,6 @@
 }
 
 .curriculum-item {
-    /*border: 1px solid rgb(89, 0, 255);*/
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -118,7 +114,6 @@ border: 1px solid white;
 @media (max-width: 600px) {
     .curriculum-box {
         width: 50%;
-        /* border: 1px solid rgb(102, 255, 0);*/
     }
 
     .curriculum-box>p {
@@ -155,13 +150,3 @@ border: 1px solid white;
     }
 }
 
-/*
-
-.curriculum{
-    display: block;
-}
-.curriculum>img{
-    display: block;
-    width: 80%;
-}
-*/

@@ -1,5 +1,5 @@
-.body-portfolio{
-    background-color: rgb(12,168,147);
+.body-portfolio {
+    background-color: rgb(12, 168, 147);
     width: 100%;
     height: 100%;
     color: rgb(255, 255, 255);
@@ -14,40 +14,46 @@
     text-align: center;
     border-right: 1px solid white;
 }
-#title-portfolio{
+
+#title-portfolio {
     font-size: 2em;
 
 }
 
-.hr01{
+.hr01 {
     width: 60%;
     color: rgb(99, 218, 168);
 }
-.presentation-portfolio{
+
+.presentation-portfolio {
     width: 100%;
     height: auto;
     text-align: center;
 }
-.presentation-portfolio p{ 
+
+.presentation-portfolio p {
     padding: 20px;
 }
-.left-portfolio{
+
+.left-portfolio {
     width: 50%;
     height: 500px;
     border: 2px solid red;
     border-radius: 20px;
     text-align: center;
 }
-.left-portfolio div{
+
+.left-portfolio div {
     border: 2px solid red;
     margin-top: 9%;
     height: 20%;
 }
+
 /* queries generales*/
-@media (max-width: 665px){
-    .portfolio{
+@media (max-width: 665px) {
+    .portfolio {
         width: 100%;
         padding-bottom: 20px;
     }
-    
+
 }

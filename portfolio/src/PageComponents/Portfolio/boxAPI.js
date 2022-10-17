@@ -49,26 +49,3 @@ export default function BoxAPI(props) {
     )
 }
 
-/*
-   
-nav = <a href='https://juanjorubiosancheportfolio.netlify.app/' ><button className='btn-element'>Visitar {props.title}</button></a>;
-navGit = <a href='https://github.com/JuanjoRSanchez/Vue01/tree/trabajo' ><button className='btn-element'>Repositorio de GitHub </button></a>;
-        
-<div className='portfolio-botonera'>
-    {nav}
-    {navGit}
-</div>
-
-
-<div className='portfolio-juego portfolio-element'>
-    <h1 style={st}>{props.title}</h1>
-    <div className='boxElement_content'>
-        <img className='boxElement_img' src={props.imag} alt={props.title}></img>
-        {<div className='content_descripcion'>{defineText(props.title)}</div>}
-    </div>
-    <div className='portfolio-botonera'>
-        {nav}
-        {navGit}
-    </div>
-</div>
-*/

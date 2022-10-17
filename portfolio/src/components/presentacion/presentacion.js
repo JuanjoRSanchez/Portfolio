@@ -13,12 +13,12 @@ export default function Layout() {
                     <hr className='hr02' />
                     <div className='text-box'>
                         <p className='text-content'>
-                            Hola, me llamo Juanjo Rubio Sanchez y acabo de finalizar el Modulo 
-                            de Formación Profesional de Diseño de Aplicaciones Web y 
+                            Hola, me llamo Juanjo Rubio Sanchez y acabo de finalizar el Modulo
+                            de Formación Profesional de Diseño de Aplicaciones Web y
                             he creado esta web para presentarme como
                             desarrollador, aqui encontrarás información sobre mi
                             y algunos trabajos que he desarrollado.
-                            <br/><br/>
+                            <br /><br />
                             ! Bienvenidos !
                         </p>
                     </div>
@@ -35,15 +35,3 @@ export default function Layout() {
         </>
     )
 }
-
-
-/*
-  <p className='titulo rubik'>Juanjo Rubio / Desarrollador Web Junior</p>
-
-   Hola, me llamo Juanjo Rubio Sanchez soy programador Web Junior recien titulado
-                            he creado esta web para presentarme como
-                            desarrollador, aqui encontrarás información sobre mi
-                            y algunos trabajos que he desarrollado.
-                            <br/><br/>
-                            ! Bienvenido !
-*/

@@ -1,12 +1,8 @@
-//import { useRef, useEffect } from 'react';
 import './conecta4.css'
 import './conecta4Juego.css'
-import './prueba.css'
 import HeaderJuegos from '../headJuegos'
 
 export default function JuegoPrueba() {
-
-
     var tabla1 = [
         {
             ocupado: false,
@@ -418,8 +414,6 @@ export default function JuegoPrueba() {
             }
         }
 
-
-        //colorearBlancos();
     }
 
     // Función que cambia el juagador en activo.

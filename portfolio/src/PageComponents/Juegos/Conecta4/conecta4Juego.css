@@ -301,3 +301,15 @@
     height: 80px;
     z-index: 1;
 }
+
+.white {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}

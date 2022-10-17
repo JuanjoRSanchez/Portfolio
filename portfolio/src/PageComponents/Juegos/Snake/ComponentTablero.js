@@ -2,7 +2,7 @@ import './snake.css'
 
 
 
-export default function Tablero01() {
+export default function Tablero() {
     return (
         <>
             <div className="tablero-snake">

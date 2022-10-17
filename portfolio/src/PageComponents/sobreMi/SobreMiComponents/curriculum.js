@@ -2,8 +2,6 @@ import React from 'react';
 import '../../../assets/styles/global.css';
 import '../../../assets/styles/botones.css';
 import './curriculum.css';
-//import { useHref } from 'react-router-dom';
-//import { useEffect } from "react";
 import { useState } from 'react';
 
 export default function Curriculum() {
@@ -121,13 +119,3 @@ export default function Curriculum() {
     </>
   )
 }
-
-/*
-import Curriculum from '../../../assets/images/Curriculum02.jpg';
-<div className='curriculum'>
-  <img src={Curriculum} alt='curriculum vitae'></img>
-</div>
-*/
-
-
-

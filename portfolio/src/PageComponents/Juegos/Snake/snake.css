@@ -25,8 +25,7 @@
 #tablero {
     display: grid;
     margin-top: 5%;
-    /*margin-left: auto;
-    margin-right: auto;*/
+
 }
 
 .tablero-box {
@@ -43,27 +42,22 @@
     width: 15px;
     height: 15px;
     background-color: grey;
-   /*border: 1px solid rgb(202, 202, 200);*/
 }
 
 .serpiente {
     width: 15px;
     height: 15px;
     background-color: rgb(112, 17, 17);
-    /*border: 1px solid rgb(202, 202, 200);*/
 }
 
 .puntoObjetivo {
     width: 15px;
     height: 15px;
     background-color: rgb(42, 47, 128);
-    /*border: 1px solid rgb(200, 200, 202);*/
 }
 
 #mandos {
     width: 350px;
-    /*height: 300px;*/
-    /*border: 1px solid red;*/
     color: white;
     text-align: center;
 
