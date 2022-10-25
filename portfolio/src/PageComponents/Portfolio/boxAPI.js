@@ -13,23 +13,38 @@ export default function BoxAPI(props) {
         navGit = <a href='/snake' ><button className='btn-element'>Repositorio de GitHub </button></a>;
     }
 
-    const filmotecaText = " Filmoteca es una aplicación que desarrollé como trabajo final del Ciclo de Formación Profesional de Desarrollo de Aplicaciones Web ";
-    const rickYmortyText = " Rick y Morty es la primera aplicación de FrontEnd que hice para empezar a practicar React";
+    const filmotecaText = " Filmoteca es una aplicación que desarrollé como trabajo final del Ciclo de Formación Profesional de Desarrollo de Aplicaciones Web. Es una aplicación diseñada para que los usuarios guarden información sobre las series y películas que ven o tienen pendientes, pudiendo añadir información sobre la obra, comentarios y notas.";
+    const stackFilmoteca = "Utilicé para el FrontEnd el frameWork Vue, para el BackEnd Java con Spring Boot y JPA y la Base de Datos MySQL.   "
+    const rickYmortyText = " Rick y Morty es la primera aplicación de FrontEnd que hice para empezar a practicar React. Es una página sencilla sobre consume la API de Rick & Morty mediante Axios, muestra todos todos los personajes de la serie y clicando en cada personaje muestra información sobre él.  ";
+    const stackRick = "Utilicé para el FrontEnd las librerías React y Axios."
+
     let Text;
+    let stack;
     function defineText(titulo) {
         switch (titulo) {
             case 'Filmoteca':
                 Text = filmotecaText;
+                stack = stackFilmoteca;
                 break;
             case 'Rick and Morty':
                 Text = rickYmortyText;
+                stack = stackRick;
                 break;
             default:
                 break;
         }
-        return Text;
+        return (
+            <>
+                <div >{Text}</div>
+                <div className='centrado'>
+                    <div >Stack:</div>
+                    {stack}
+                    </div>
+            </>
+
+        );
     }
-    
+
     return (
         <>
             <div className='boxTitlePortfolio'>
@@ -39,6 +54,7 @@ export default function BoxAPI(props) {
                 <div className='boxElement_content'>
                     <img className='boxElement_img' src={props.imag} alt={props.title}></img>
                     {<div className='content_descripcion'>{defineText(props.title)}</div>}
+
                 </div>
                 <div className='portfolio-botonera'>
                     {nav}

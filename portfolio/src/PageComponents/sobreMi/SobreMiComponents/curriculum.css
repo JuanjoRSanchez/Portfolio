@@ -70,11 +70,15 @@
     padding: 10px;
     border-bottom: 1px solid white;
     border-bottom-width: thin;
+
+    color: brown;
 }
 
-.curriculum-item p {
+.curriculum-item > p {
     color: brown;
     font-size: 1.2em;
+    font-weight: 2000;
+
 }
 
 .experiencia-box {

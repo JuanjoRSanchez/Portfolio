@@ -15,7 +15,7 @@ export default function Portfolio() {
         <section className='portfolio-boxPresentacion box'>
           <p className='titulo'>Portfolio</p>
           <div className='text-content'>
-            El protfolio está dividido en tres partes:
+            El protfolio está dividido en dos partes:
           </div>
           <div className='seccionesPortfolio' > 
            <a href='#juegosPortfolio' className='seccionPortfolio'>Juegos</a>
@@ -26,7 +26,7 @@ export default function Portfolio() {
           <p className='titulo'>Juegos</p>
           <div className='text-content'>
             Aquí podrás ver los juegos que he desarrollado para practicar las habilidades de Javascript.
-            Todos están hechos en Javascript y según mis propia lógica. 
+            Todos están hechos en Javascript y según mi propia lógica. 
           </div>
           <div className='portfolio-boxElement'>
             <BoxElement imag={Snake} title='Snake' dir='/snake' />
@@ -37,8 +37,8 @@ export default function Portfolio() {
         <section className='portfolio-boxAPIS box' id='ApisPortfolio'>
           <p className='titulo'>APIS</p>
           <div className='text-content'>
-            Aquí podrás ver los juegos que he desarrollado para practicar las habilidades de Javascript.
-            Todos están hechos en Javascript y según mis propia lógica para bién o para mal.
+            Estás son algunas de las aplicaiones que he hecho hasta la actualidad. La intención era practicar tanto BackEnd como FrontEnd así que 
+            he utilizado diferentes lenguajes y tecnologías.
           </div>
           <div className='portfolio-boxElement'>
             <BoxElementAPI imag={FilmotecaImg} title='Filmoteca' dir='https://localhost:9013' />

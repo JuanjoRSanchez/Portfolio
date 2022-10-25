@@ -5,28 +5,42 @@ import './boxes.css'
 export default function BoxElement(props) {
     const dirSnake = props.dir;
     const snakeText = "Este es el juego de la serpiente clasico de Nokia ¡Ciudado no podras salirte del mapa! ";
+    const snakeStack = "Creada unicamente en JavaScript inicialmente y adaptada a React para este Portfolio.";
     const conectaText = "He desarrollado el juego Connecta 4 para poder ser jugado por dos jugadores.";
+    const conectaStack = "Creada en JavaScript inicialmente y adaptada a React para este Portfolio.";
     const pacmanText = "He intentado recrear el juego clasico Pacman.";
+    const pacmanStack = "Creada en JavaScript inicialmente y adaptada a React para este Portfolio.";
+
     let Text;
+    let stack;
     function defineText(titulo) {
         switch (titulo) {
             case 'Snake':
                 Text = snakeText;
-
+                stack = snakeStack;
                 break;
             case 'Conecta 4':
                 Text = conectaText;
-
+                stack = conectaStack;
                 break;
             case 'Pacman':
                 Text = pacmanText;
-
+                stack = pacmanStack;
                 break;
             default:
                 break;
         }
 
-        return Text;
+        return (
+            <>
+                <div className='centrado'>{Text}</div>
+                <br></br>
+                <div className='centrado'>
+                    <div>Stack:</div>
+                    {stack}
+                    </div>
+            </>
+        )
     }
     let nav;
     let navGit;
