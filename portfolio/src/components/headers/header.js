@@ -27,6 +27,11 @@ export default function Header() {
         </div>
         <div className="box-1">
           <div className="btn mibtn">
+            <NavLink to='/stack' className='header-link'>Stack</NavLink>
+          </div>
+        </div>
+        <div className="box-1">
+          <div className="btn mibtn">
             <a href='#footer' className='header-link'>Contacto</a>
           </div>
         </div>
@@ -38,16 +43,9 @@ export default function Header() {
         <ul className='desplegable-lista' >
           <NavLink to='/sobreMi' ><li className='desplegable-elemento'>Sobre mí</li></NavLink>
           <NavLink to='/portfolio'><li className='desplegable-elemento'>Portfolio</li></NavLink>
-          <NavLink to='/contacto'><li className='desplegable-elemento'>Contacto</li></NavLink>
+          <a href='#footer'><li className='desplegable-elemento'>Contacto</li></a>
         </ul>
       </div>
     </div>
   )
 }
-/*
-<div className="box-1">
-          <div className="btn mibtn">
-            <NavLink to='/contacto' className='header-link' >Contacto</NavLink>
-          </div>
-        </div>
-*/

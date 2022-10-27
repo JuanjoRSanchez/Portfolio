@@ -14,11 +14,10 @@ export default function SobreMi() {
           <div className='text-box'>
             <p className='text-content '>
               Me llamo Juanjo y nací en 1981 en Barcelona, actualmente vivo en Granada.
-              He tenido diferentes experiencias laborales hasta 2013 principalmente
-              relacionadas con la logística. Desde 2011 a 2014 hice un Módulo Profesional
-              de Diseño en Fabricación Mecánica y cursos relacionados para más tarde empezar a  trabajar como delineante hasta 2019
-              para la industria de la automoción. En 2020 empecé el Módulo Profesional de Diseño de Aplicaciones Web que acabé
-              en 2022.
+              En 2020 empecé el Módulo Profesional de Diseño de Aplicaciones Web que acabé
+              en Junio de 2022 y hasta ahora he seguido formandome haciendo cursos y proyectos  por mi cuenta para seguir aprendiendo
+              tecnologías tanto de BackEnd como de FrontEnd.
+              Actualmente estoy buscando empleo como Desarrollador Web.
             </p>
             <p className='text-content'>
               Actualmente estoy buscando empleo como Desarrollador Web y sigo formándome creando proyectos propios.

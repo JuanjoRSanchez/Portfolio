@@ -32,56 +32,128 @@
     padding-top: 6%;
     border-right: 2px solid rgb(249, 249, 253);
     font-size: 1em;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.left-footer>p {
+    /* border: 2px solid rgb(4, 0, 255);*/
+    width: 90%;
+    
+}
 .rigth-footer {
     padding-top: 20px;
     padding-bottom: 20px;
     /* border: 2px solid rgb(255, 238, 0);*/
     width: 50%;
+    /*height: 100px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.8em;
 
 }
 
-.rigth-footer>div>a {
+.box_linkedin {
+    width: 20%;
+    min-width: 150px;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linkedin_link {
+
     text-decoration: none;
     color: aqua;
     font-size: 0.9em;
 
 }
 
-.hr_footer {
-    display: block;
-    width: 60%;
-    color: rgb(145, 209, 193);
+.linkedin_link>img {
+    width: 45%;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 500px) {
+.box_gmail {
+    width: 45%;
+    min-width: 330px;
+   /* border: 1px solid red;*/
+
+}
+
+.box_gmail>img {
+    width: 33%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.box_gmail>img:hover {
+    width: 37%;
+
+}
+
+.box_telefono {
+   /* border: 1px solid red;*/
+
+    min-width: 110px;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box_telefono>img {
+    width: 52%;
+    border-radius: 57px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 33px;
+
+}
+
+
+.box_linkedin,
+.box_gmail,
+.box_telefono {
+    font-size: 0.85em;
+    margin-top: 30px;
+    border-bottom:1px solid white;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 530px) {
     .left-footer {
         width: 100%;
         height: 80px;
         padding-top: 6%;
         font-size: 0.7em;
+        border-right: 0px solid rgb(249, 249, 253);
 
     }
 
     .rigth-footer {
         position: relative;
         width: 100%;
-        height: 150px;
+        height: auto;
         padding-top: 10px;
         border-top: 1px solid rgb(87, 137, 170);
         font-size: 0.7em;
 
     }
 
-    .rigth-footer>div {
+    .box_linkedin,
+    .box_gmail,
+    .box_telefono {
         font-size: 0.85em;
-        margin-top: 10px;
-    }
-
-    .hr_footer {
-        display: none;
+        margin-top: 30px;
+        border-bottom:1px solid white;
+        padding-bottom: 10px;
     }
 
 }

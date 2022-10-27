@@ -7,6 +7,7 @@ import conecta from '../../assets/images/Conecta_Logo.png';
 import BoxElementAPI from './boxAPI'
 import FilmotecaImg from '../../assets/images/LogoFilmoteca00.png'
 import RickMorty from '../../assets/images/Rick-and-Morty.png'
+import LogoPortfolio from '../../assets/images/logo_portfolio.png'
 
 export default function Portfolio() {
   return (
@@ -42,10 +43,18 @@ export default function Portfolio() {
           </div>
           <div className='portfolio-boxElement'>
             <BoxElementAPI imag={FilmotecaImg} title='Filmoteca' dir='https://localhost:9013' />
-            <BoxElementAPI imag={RickMorty} title='Rick and Morty' dir='/' />
+            <BoxElementAPI imag={RickMorty} title='Rick&Morty' dir='https://localhost:9014' />
           </div>
         </section>
-        
+        <section className='portfolio-boxPortfolio box' id='ApisPortfolio'>
+          <p className='titulo'>Portfolio</p>
+          <div className='text-content'>
+            Aquí muestro los enlaces al repositorio de GitHub de este portfolio.
+          </div>
+          <div className='portfolio-boxElement'>
+            <BoxElementAPI imag={LogoPortfolio} title='Portfolio' dir='/' />
+          </div>
+        </section>
       </div >
     </>
   )

@@ -68,6 +68,10 @@
     background-color: #78bbb2;
 }
 
+.portfolio-boxPortfolio{
+    background-color: #a2c9c5;
+}
+
 .portfolio-API {
     width: 45%;
 }
@@ -89,6 +93,8 @@
 
     .titulo {
         font-size: 1.5em;
+        width: 90%;
+        margin: auto;
     }
 
     .text-content {

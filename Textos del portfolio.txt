@@ -1,0 +1,55 @@
+SOBRE MI
+
+Me llamo Juanjo y nací en 1981 en Barcelona, actualmente vivo en Granada.
+He tenido diferentes experiencias laborales hasta 2013 principalmente
+relacionadas con la logística. Desde 2011 a 2014 hice un Módulo Profesional
+de Diseño en Fabricación Mecánica y cursos relacionados para más tarde empezar a  trabajar como delineante hasta 2019
+para la industria de la automoción. En 2020 empecé el Módulo Profesional de Diseño de Aplicaciones Web que acabé en 2022.
+
+SOBRE MI (nuevo)
+
+Me llamo Juanjo y nací en 1981 en Barcelona, actualmente vivo en Granada.
+En 2020 empecé el Módulo Profesional de Diseño de Aplicaciones Web que acabé
+en Junio de 2022 y hasta ahora he seguido formandome haciendo cursos y proyectos  por mi cuenta para seguir aprendiendo
+tecnologías tanto de BackEnd como de FrontEnd.
+Actualmente estoy buscando empleo como Desarrollador Web.
+
+CURRICUM
+
+Mi currículum hasta ahora no tiene ninguna relación con el sector
+de la informatica más allá de las prácticas del modulo de formación y
+del uso como herramienta con programas de
+gestión logística y de diseño CAD, de todos modos si tiene interes en ver mi currículum completo lo podrás ver clicando
+en botón que tienes más abajo.
+
+Las prácticas del Modulo de Diseño de Aplicaciones Web las realicé en la empresa Tiresur, en Granada. Me dediqué
+a mejoras y nuevas implementaciones en un Scraper de precios y haciendo cambios de diseño en la página de venta al público Center's Auto.
+
+CURRICUM (nuevo) sector IT
+
+FORMACIÓN
+Grado Superior de Desarrollo de Aplicaciones Web de 2020 a 2022.
+Cursos cortos de diferentes tecnologías en función de las necesidades que tuve mientras realizaba mis proyectos personales como:
+	- React
+	- Vue
+	- Java 
+	- Spring Boot
+	- Docker
+
+EXPERIENCIA
+
+Las prácticas del Modulo de Diseño de Aplicaciones Web las realicé en la empresa Tiresur, en Granada. Me dediqué
+a mejoras y nuevas implementaciones en un Scraper de precios y haciendo cambios de diseño en la página de venta al público Center's Auto.
+
+CURRICUM (nuevo) 
+
+FORMACIÓN
+
+Curso de Diseño de Piezas de plástico con CATIA V5 Año 2019.
+Curso de Diseño de útiles de procesado de chapa (matricería) De 02/2015 al 09/2015.
+FP Grado Superior Diseño en Fabricación mecánica de 10/2011 hasta la 31/01/2013.
+
+EXPERIENCIA
+
+Delineante en Sider Ingenieria (Barcelona) Empresa dedicada al diseño de útiles de procesado de chapa. Desde 10/2015 hasta la 31/01/2019. 
+Mozo de almacén en APLI Paper (Barcelona) en diferentes etapas.

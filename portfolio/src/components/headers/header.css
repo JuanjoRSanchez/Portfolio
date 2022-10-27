@@ -48,7 +48,7 @@
 
 .burguer-menu>img {
 	width: 40px;
-	border: 1px solid rgb(218, 95, 24);
+	border: 1px solid rgb(255, 255, 255);
 	border-radius: 3px;
 }
 
@@ -77,15 +77,15 @@
 	text-align: center;
 	font-size: 1em;
 	color: #000000;
+	list-style:  none;
 }
-
 
 .desplegable-elemento:hover {
 	background-color: rgb(94, 206, 154);
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
 	.header {
 		width: 100%;
 		height: 20%;
@@ -101,7 +101,7 @@
 	}
 
 	.burguer-menu {
-		display: none;
+		display: block;
 	}
 
 	.burguer-menu>img:hover {

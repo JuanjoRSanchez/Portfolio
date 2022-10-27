@@ -102,4 +102,8 @@
         height: auto;
     }
 
+    .content_descripcion {
+        width: 95%;
+       
+    }
 }
