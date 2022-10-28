@@ -51,7 +51,6 @@ export default function BoxAPI(props) {
                     {stack}
                 </div>
             </>
-
         );
     }
 
@@ -64,7 +63,6 @@ export default function BoxAPI(props) {
                 <div className='boxElement_content'>
                     <img className='boxElement_img' src={props.imag} alt={props.title}></img>
                     {<div className='content_descripcion'>{defineText(props.title)}</div>}
-
                 </div>
                 <div className='portfolio-botonera'>
                     {nav}

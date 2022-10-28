@@ -45,8 +45,8 @@ export default function Portfolio() {
             he utilizado diferentes lenguajes y tecnologías.
           </div>
           <div className='portfolio-boxElement'>
-            <BoxElementAPI imag={FilmotecaImg} title='Filmoteca' dir='82.223.108.65:9013' />
-            <BoxElementAPI imag={RickMorty} title='Rick&Morty' dir='82.223.108.65:9014' />
+            <BoxElementAPI imag={FilmotecaImg} title='Filmoteca' dir='https://82.223.108.65:9013' />
+            <BoxElementAPI imag={RickMorty} title='Rick&Morty' dir='https://82.223.108.65:9014' />
           </div>
         </section>
         <section className='seccion-general box section_color04' id='ApisPortfolio'>
