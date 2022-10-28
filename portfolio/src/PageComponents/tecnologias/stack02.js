@@ -18,8 +18,15 @@ import LogoApache from '../../assets/images/Logos_tecnologia/logo_apache.png'
 export default function Stack() {
   return (
     <>
-      <div id='body'> 
-        <section className='section_one box'>
+      <div id='body'>
+        <section className='seccion-general box section_color01 '>
+          <div className='titulo '>Stack tecnológico</div>
+          <hr className='hr01' />
+          <div className='box_presentacion'>
+            Estas son las tecnologías con las que he realizado mis proyectos y que sigo aprendiendo.
+          </div>
+        </section>
+        <section className='section_one box section_color02'>
           <div className='box_front'>
             <div className='title'>FrontEnd</div>
             <img className='deg0 ' src={Logojs} alt='Logo de HTML' />
@@ -31,7 +38,7 @@ export default function Stack() {
             <img className='deg310 ' src={LogoAxios} alt='Logo de HTML' />
           </div>
         </section>
-        <section className='section_two box'>
+        <section className='section_two box section_color03'>
           <div className='box_back'>
             <div className='title'>BackEnd</div>
             <img className='pos0' src={LogoJava} alt='Logo de HTML' />
@@ -40,7 +47,7 @@ export default function Stack() {
             <img className='pos3' src={LogoJpa} alt='Logo de HTML' />
           </div>
         </section>
-        <section className='section_three box'>
+        <section className='section_three box section_color04 '>
           <div className='box_despliegue'>
             <div className='title'>Despliegue</div>
             <img className='logos' src={Logodocker} alt='Logo de HTML' />

@@ -6,9 +6,8 @@ import Curriculum from './SobreMiComponents/curriculum'
 
 export default function SobreMi() {
   return (
-    <>
       <div className='body-sobreMi'>
-        <section className='seccion-general body-sobreMi'>
+        <section className='seccion-general body-sobreMi section_color01'>
           <p className='titulo bold'>Sobre mi</p>
           <hr className='hr01' />
           <div className='text-box'>
@@ -17,7 +16,6 @@ export default function SobreMi() {
               En 2020 empecé el Módulo Profesional de Diseño de Aplicaciones Web que acabé
               en Junio de 2022 y hasta ahora he seguido formandome haciendo cursos y proyectos  por mi cuenta para seguir aprendiendo
               tecnologías tanto de BackEnd como de FrontEnd.
-              Actualmente estoy buscando empleo como Desarrollador Web.
             </p>
             <p className='text-content'>
               Actualmente estoy buscando empleo como Desarrollador Web y sigo formándome creando proyectos propios.
@@ -26,7 +24,6 @@ export default function SobreMi() {
         </section>
         <Curriculum />
       </div>
-    </>
   )
 }
 

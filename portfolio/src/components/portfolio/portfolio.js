@@ -18,7 +18,7 @@ export default function Portfolio() {
                         </p>
                     </div>
                 </div>
-                <NavLink to='/portfolio' className='link'>
+                <NavLink to='/portfolio/#portfolio' className='link'>
                     <div className='svg-wrapper'>
                         <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                             <rect className="shape" height="60" width="320" />

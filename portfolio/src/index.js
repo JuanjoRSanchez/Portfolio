@@ -12,7 +12,7 @@ import Snake from './PageComponents/Juegos/Snake/sanke01';
 import Pacman from './PageComponents/Juegos/Pacman/pacman';
 import Conecta from './PageComponents/Juegos/Conecta4/conecta4Home';
 import JuegoPrueba from './PageComponents/Juegos/Conecta4/juegoPrueba';
-import Stack from './PageComponents/tecnologias/stack03';
+import Stack from './PageComponents/tecnologias/stack02';
 import NotFound from './PageComponents/ErrorPage/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

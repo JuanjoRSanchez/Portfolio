@@ -19,39 +19,41 @@ export default function Curriculum() {
   return (
     <>
       <div className='body-sobreMi'>
-        <section className='seccion-general '>
+        <section className='seccion-general section_color02'>
           <p className='titulo bold'>Currículum IT</p>
           <hr className='hr01' />
           <div className='text-box'>
-            <p className='text-content'>
+            <div className='text-content'>
               FORMACIÓN
               <p>Grado Superior de Desarrollo de Aplicaciones Web de 2020 a 2022.</p>
-              <p>Cursos cortos de diferentes tecnologías en función de las necesidades que tuve mientras realizaba mis proyectos personales como:
+              <p>Cursos de diferentes tecnologías en función de las necesidades que tuve mientras realizaba mis proyectos personales como:
                 (React, Vue, Java,Spring Boot, Docker)
               </p>
-            </p>
-            <p className='text-content'>
+            </div>
+            <div className='text-content'>
               EXPERIENCIA
               <p>Las prácticas del Modulo de Diseño de Aplicaciones Web las realicé en la empresa Tiresur, en Granada. Me dediqué
                 a mejoras y nuevas implementaciones en un Scraper de precios en C# y haciendo cambios de diseño en la página de venta al público Center's Auto.
               </p>
-            </p>
+            </div>
           </div>
+          </section>
+          <section className='seccion-general section_color03'>
           <p className='titulo bold'>Currículum anterior a estudiar IT</p>
           <hr className='hr01' />
           <div className='text-box'>
-            <p className='text-content'>
+            <div className='text-content'>
               FORMACIÓN
               <p>Curso de Diseño de Piezas de plástico con CATIA V5 Año 2019. (CAD)</p>
               <p>Curso de Diseño de útiles de procesado de chapa (matricería) De 02/2015 al 09/2015.</p>
               <p>FP Grado Superior Diseño en Fabricación mecánica de 10/2011 hasta la 31/01/2013.</p>
-            </p>
-            <p className='text-content'>
+            </div>
+            <div className='text-content'>
               EXPERIENCIA
               <p> Delineante en Sider Ingenieria (Barcelona) Empresa dedicada al diseño de útiles de procesado de chapa. Desde 10/2015 hasta la 31/01/2019.
                 Mozo de almacén en APLI Paper (Barcelona) en diferentes etapas.</p>
               <p>Si tienes interes en ver mi currículum completo clicando en el siguiente botón lo podrás ver.</p>
-            </p>
+            </div>
           </div>
           <button className='btn-curriculumm' onClick={mostrarCurriculum} >Desplegar currículum</button>
           <div className={curriculumStyle} >

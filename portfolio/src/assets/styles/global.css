@@ -4,6 +4,7 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  color: white;
 }
 
 .bold {
@@ -21,25 +22,66 @@
 
 .titulo {
   font-size: 2.5em;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  color: white
 }
 
 a {
   text-decoration: none;
 }
 
-.seccion-general{
+.seccion-general {
   font-family: 'Montserrat';
   width: 100%;
   height: auto;
   text-align: center;
   border-right: 1px solid white;
-  background-color: rgb(12,168,147);
   margin-top: 0%;
   padding-top: 15px;
   padding-bottom: 15px;
   color: white;
 }
-.centrado{
+
+.centrado {
   margin-top: 10px;
   text-align: center;
+}
+
+.section_color01 {
+  background-color: #27665e;
+}
+
+.section_color02 {
+  background-color: #0ca893;
+}
+
+.section_color03 {
+  background-color: #78bbb2;
+}
+
+.section_color04 {
+  background-color: #a2c9c5;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+
+}
+
+@media (max-width: 500px) {
+  .titulo {
+    font-size: 1.5em;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .text-content {
+    font-size: 1.1em;
+  }
+
 }
